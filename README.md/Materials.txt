@@ -1,0 +1,31 @@
+Selectors : 
+getByText => identify by visible getByText
+getByPlaceholder => identify by the placeholder attribute
+getByLabel => identify by the label attribute
+
+this is easy =>  await page.locator('[name="login-button"]'). just the attribute and the relevant value
+
+Assertions :
+to check whether the expectation is true. or to check something worked.
+
+basically expect() is used as the assertion.
+
+Hooks : 
+special functions that run before or after the tests. 
+    > beforeAll() -> run once before all tests
+    > afterAll() -> run once after all tests
+    > beforeEach() -> run before each test
+    > afterEach() -> run after each test
+
+Fixtures : 
+reusable pieces of setup logic like logging in, creating test data or setting up an API client..
+inbuilt examples => page , browser, content
+let users to create their own as well.
+
+
+Playwright AI Testing
+
+Playwright itself doesn't have built-in AI — instead, libraries like Zerostep sit on top of it. 
+We write natural-language commands, the library takes a screenshot, sends it to an AI model (vision + NLP), 
+and the model figures out which element to interact with and how.
+
